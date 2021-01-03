@@ -1,0 +1,19 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: cloud-eureka-hystrix-provider-pay-service   # \u670D\u52A1\u63D0\u4F9B\u8005\u96C6\u7FA4\u4E2D,\u76F8\u540C\u670D\u52A1\u7684\u8282\u70B9\u8981\u5199\u7684\u4E00\u6837\uFF0C\u8FD9\u662F\u8FD9\u4E2A\u96C6\u7FA4\u7684\u5173\u952E
+
+eureka:
+  client:
+    # \u6CE8\u518C\u8FDB Eureka \u7684\u670D\u52A1\u4E2D\u5FC3
+    register-with-eureka: true
+    # \u68C0\u7D22 \u670D\u52A1\u4E2D\u5FC3 \u7684\u5176\u5B83\u670D\u52A1
+    fetch-registry: true
+    service-url:
+      # \u8BBE\u7F6E\u4E0E Eureka Server \u4EA4\u4E92\u7684\u5730\u5740
+      defaultZone: http://localhost:7001/eureka/
+  instance:
+    instance-id: pay8001  # \u4FEE\u6539 \u5728Eureka \u6CE8\u518C\u4E2D\u5FC3\u663E\u793A\u7684 \u4E3B\u673A\u540D\uFF1A
+    prefer-ip-address: true   # \u8BBF\u95EE\u8DEF\u5F84\u53EF\u4EE5\u663E\u793AIP\u5730\u5740
