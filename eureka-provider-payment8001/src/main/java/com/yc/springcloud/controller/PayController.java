@@ -68,7 +68,7 @@ public class PayController {
 
 
     // ========= 服务发现 Discovery =======
-    //对于注册进eureka里面的微服务，可以通过服务发现来获得该服务的信息
+    // 对于注册进eureka里面的微服务，可以通过服务发现来获得该服务的信息
 
     @Resource
     private DiscoveryClient discoveryClient;

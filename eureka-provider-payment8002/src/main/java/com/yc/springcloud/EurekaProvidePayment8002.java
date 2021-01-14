@@ -18,9 +18,4 @@ public class EurekaProvidePayment8002 {
         SpringApplication.run(EurekaProvidePayment8002.class, args);
     }
 
-    /**
-     * eureka 服务提供者 8002
-     */
-
-
 }

@@ -20,7 +20,4 @@ public class EurekaProviderPayment8001 {
         SpringApplication.run(EurekaProviderPayment8001.class, args);
     }
 
-    /**
-     * eureka 服务提供者 8001
-     */
 }
