@@ -23,7 +23,7 @@ public interface PaymentFeignService {
      * @return
      */
     @GetMapping(value = "/pay/{id}")
-    public CommonResult getPaymentById(@PathVariable("id") Integer id);
+    CommonResult getPaymentById(@PathVariable("id") Integer id);
 
 
 }

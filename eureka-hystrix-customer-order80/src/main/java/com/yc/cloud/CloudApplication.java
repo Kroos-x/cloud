@@ -6,13 +6,15 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * 主启动类
+ *
+ * @author xieyc
  */
 @SpringBootApplication
 @EnableFeignClients
-public class EnrekaFeignCustomerOrder80 {
+public class CloudApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EnrekaFeignCustomerOrder80.class, args);
+        SpringApplication.run(CloudApplication.class, args);
     }
 
 }

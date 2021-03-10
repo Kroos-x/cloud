@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
  * @Date: 2021-01-02
  */
 @Configuration
-public class Config {
+public class OpenFeignLogConfig {
 
     @Bean
     Logger.Level feignLoggerLevel() {
