@@ -25,5 +25,5 @@ eureka:
 #      defaultZone: http://localhost:7001/eureka/
       defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
   instance:
-    instance-id: provider8002  #修改 在Eureka 注册中心显示的 主机名：
+    instance-id: provider8002  # 修改 在Eureka 注册中心显示的 主机名：
     prefer-ip-address: true   # 访问路径可以显示IP地址

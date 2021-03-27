@@ -4,9 +4,7 @@ import cn.hutool.core.util.IdUtil;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
 
-import java.util.concurrent.TimeUnit;
 
 /**
  * 功能描述:
@@ -34,14 +32,15 @@ public class PayService {
             @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "5000")
     })
     public String paymentinfo_Timeout(Integer id) {
-        int interTime = 3;
+        // int interTime = 3;
         // int age = 10/0;
         try {
-            TimeUnit.SECONDS.sleep(interTime);
+            // TimeUnit.SECONDS.sleep(interTime);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return "线程池：" + Thread.currentThread().getName() + "--paymentInfo_Timeout，id:" + id + "耗时" + interTime + "秒钟--";
+        return "success";
+        // return "线程池：" + Thread.currentThread().getName() + "--paymentInfo_Timeout，id:" + id + "耗时" + interTime + "秒钟--";
         // return "线程池：" + Thread.currentThread().getName() + "--paymentInfo_Timeout，id:" + id ;
     }
 
