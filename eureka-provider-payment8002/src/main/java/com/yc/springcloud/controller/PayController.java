@@ -50,12 +50,12 @@ public class PayController {
 
     @GetMapping("/get/{id}")
     public String getGateWayTest1(@PathVariable("id") Integer id) {
-        return "***8001 get方法收到请求，参数id为：" + id;
+        return "***8002 get方法收到请求，参数id为：" + id;
     }
 
     @GetMapping("/lb/{id}")
     public String getGateWayTest2(@PathVariable("id") Integer id) {
-        return "---8001 lb方法收到请求，参数id为：" + id;
+        return "---8002 lb方法收到请求，参数id为：" + id;
     }
 
 
