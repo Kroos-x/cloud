@@ -1,0 +1,28 @@
+server:
+  port: 2001
+spring:
+  application:
+    name: seata-order-service
+  cloud:
+    alibaba:
+      seata:
+        # \u81EA\u5B9A\u4E49\u4E8B\u52A1\u7EC4\uFF0C\u9700\u8981\u548C\u5F53\u65F6\u5728 seata/conf/file.conf \u4E2D\u7684\u4E00\u81F4
+        tx-service-group: fsp_tx_group
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/seata_order
+    username: root
+    password: xieyc@mysql
+
+
+# \u6CE8\u610F,\u8FD9\u662F\u81EA\u5B9A\u4E49\u7684,\u539F\u6765\u7684\u662Fmapper_locations
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+
+logging:
+  level:
+    io:
+      seata: info
